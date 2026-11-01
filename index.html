@@ -1143,7 +1143,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 <script>
 (() => {
   const sleep = ms => new Promise(r => setTimeout(r, ms));
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reduced = false;
 
   const navs=[...document.querySelectorAll('.quicknav a')];
   const sections=[...document.querySelectorAll('[data-section]')];
